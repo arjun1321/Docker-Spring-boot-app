@@ -1,12 +1,12 @@
 package arjun.kumar.dockerapp.service;
 
-import arjun.kumar.dockerapp.bean.ActorResponse;
+import arjun.kumar.dockerapp.bean.RedisActorCache;
 
 /** @author Arjun Kumar  */
 
 public interface ActorRedisService {
 
-    ActorResponse addActorToRedis(Long actorId);
+    RedisActorCache addActorToRedis(Long actorId);
 
-    ActorResponse getActorFromRedis(Long actorId);
+    RedisActorCache getActorFromRedis(Long actorId);
 }
